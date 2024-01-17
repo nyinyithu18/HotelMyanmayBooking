@@ -1,0 +1,785 @@
+<html lg="en">
+	<head>
+		<title>Myanmar Hotel Booking</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fontawesome-free-6.4.0/css/all.css">
+	</head>
+	<body class="bg-body-secondary">
+		<header class="header mb-4">
+					<!--Background Image Slide-->
+			<div class="carouselGp">
+				<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="5000">
+							<img src="asset-image/hotel-bg-image1.jpg" class="d-block w-100" alt="Hotel Baground Image">
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<img src="asset-image/hotel-bg-image2.jpg" class="d-block w-100" alt="Hotel Baground Image">
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<img src="asset-image/hotel-bg-image3.jpg" class="d-block w-100" alt="Hotel Baground Image">
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<img src="asset-image/hotel-bg-image4.jpg" class="d-block w-100" alt="Hotel Baground Image">
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<img src="asset-image/hotel-bg-image5.jpg" class="d-block w-100" alt="Hotel Baground Image">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon d-none" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+						<span class="carousel-control-next-icon d-none" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+
+			<!--Arrow Down Icon-->
+
+			<a class="arrow-down" href="#about-us">
+				<img src="asset-image/arrow-down.svg" alt="Arrow Down icon">
+			</a>
+
+			<!--shade1-->
+
+			<div class="shade1"></div>
+
+				<!--CheckIn CheckOut-->
+			<div class="welcom d-inline-flex mb-3">
+				<h1 class="text-light me-2">Welcom To</h1>
+				<h3 class="text-light ms-2 mt-1">Myanmar Hotel Booking</h3>
+			</div>	
+			<div class="checkInOut">	
+				<form>
+					<div class="d-flex mb-3">
+						<label for="checkIn">Check in</label>
+						<input class="ms-3" type="date" id="checkIn" min="2023-7-26" required>
+					</div>
+					<div  class="d-flex mb-3">
+						<label for="checkOut">Check out</label>
+						<input class="ms-2" type="date" id="checkOut" required>
+					</div>
+					<div  class="d-flex mb-3">
+						<label for="population">Population</label>
+						<input class="ms-1" type="number" id="population" min="1" placeholder="Childern" required>
+					</div>
+					<div  class="d-flex mb-3">
+						<label for="room">Room</label>
+						<input class="roomInput" type="number" id="room" min="1" placeholder="Room" required>
+					</div>							
+						<input class="bookNow" type="submit" value="Book Now">
+				</form>			
+			</div>
+
+				<!--Logo And BrandName-->
+			<div class="subheader bg-secondary bg-opacity-75 d-flex justify-content-around">
+				<div class="hotelBrand">
+					<img src="asset-image/./hotel-logo.png" alt="Hotel Logo">
+					<a href="#" class="d-none d-md-inline ms-2 fs-5 fw-bold text-decoration-none text-light">Myanmar Hotel Booking</a>
+				</div>		
+				
+					<!--Menu Bar-->
+				<div>
+					<nav class="navbar navbar-expand-lg">
+						<button id="menuIcon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="bar fa-solid fa-bars-staggered"></i>
+							<i class="close fa-solid fa-xmark"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarMenu">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+									<a id="aboutUs" class="nav-link" href="#about-us">About Us</a>													
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Popular Place
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#yangon">Yangon</a></li>
+										<li><a class="dropdown-item" href="#mandalay">Mandalay</a></li>	
+										<li><a class="dropdown-item" href="#bagan">Bagan</a></li>	
+										<li><a class="dropdown-item" href="#kalaw">Kalaw</a></li>	
+										<li><a class="dropdown-item" href="#pyin-oo-lwin">PyinOoLwin</a></li>
+										<li><a class="dropdown-item" href="#chaung-tha">ChaungTha</a></li>	
+										<li><a class="dropdown-item" href="#inle">Inle</a></li>
+										<li><a class="dropdown-item" href="#hpa-an">Hpa-An</a></li>						
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#service">Service</a>													
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Contact
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="register.html">Register</a></li>
+										<li><a class="dropdown-item" href="login.html">Login</a></li>				
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+						
+						<!-- Payment And Language -->
+				<div class="payLang mt-2">
+					<ul class="d-block-flex d-md-inline-flex">
+						<li class="dropdown">
+							<a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span title="Select your currency">Payment</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="d-flex flex-inline"><img class="dollor" src="asset-image/./us-dollor.png" alt="Dollor image"><a class="dropdown-item text-dark" href="#">$</a></li>
+								<li class="d-flex flex-inline"><img class="kyat" src="asset-image/./myanmar-money.png" alt="Myanmar Money image"><a class="dropdown-item text-dark" href="#">MMK</a></li>				
+							</ul>
+						</li>
+						<li class="dropdown ms-md-2">
+							<a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span title="Select your Language">Language</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="d-flex flex-inline"><img class="usFlag" src="asset-image/./us-flag.png" alt="US Flag image"><a class="dropdown-item text-dark" href="#">English(US)</a></li>
+								<li class="d-flex flex-inline"><img class="myanFlag" src="asset-image/./myanmar-flag.png" alt="Myanmar Flag image"><a class="dropdown-item text-dark" href="#">Myanmar</a></li>				
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+				<!--End header-->
+
+				<!--Start Section-->
+		<section id="main">
+			<hr class="mx-5">
+			<!--About Us-->
+			<div class="my-3 mx-3">
+				<div class="container aboutUs" id="about-us">					
+					<h1 class="text-center">About Us</h1>
+					<hr>
+					<div class="row gap-5 d-flex justify-content-around">
+						<div class="tourImg col-12 col-lg-5 mt-4">
+							<img src="asset-image/tour-image1.jpg" alt="Popular Countries image">
+
+							<!--shade2-->
+							<div class="shade2"></div>
+
+						</div>
+						<div class="about col-12 col-lg-5">
+							<h2 class="text-center fw-bold">Our History</h2>
+							<p class="mt-3 text-start">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum facere veniam sunt at, dolorum vitae reiciendis soluta ducimus cumque a minus animi aliquid aperiam sint eveniet eius accusamus sed?
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum facere veniam sunt at, dolorum vitae reiciendis soluta ducimus cumque a minus animi aliquid aperiam sint eveniet eius accusamus sed?
+							</p>
+						</div>
+					</div>
+
+					<br><hr><br>
+
+					<div class="row gap-5 d-flex justify-content-around">
+						<div class="about col-12 col-lg-5">
+							<h2 class="text-center fw-bold">Our Purpose</h2>
+							<p class="mt-3 text-start">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum facere veniam sunt at, dolorum vitae reiciendis soluta ducimus cumque a minus animi aliquid aperiam sint eveniet eius accusamus sed?
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum facere veniam sunt at, dolorum vitae reiciendis soluta ducimus cumque a minus animi aliquid aperiam sint eveniet eius accusamus sed?
+							</p>
+						</div>
+						<div class="tourImg col-12 col-lg-5">
+							<img src="asset-image/tour-image2.png" alt="Popular Countries image">
+							
+							<!--shade3-->
+							<div class="shade3"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<hr class="mx-5">
+
+			<!--Popular Place-->
+
+			<div class="container pupularPlace" id="popular-place">
+				<h1 class="text-center">Popular Place</h1>
+				<div class="subPupularPlace row mt-4 mx-2">
+
+					<!-- Yangon-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="yangon">
+						<div class="card">
+							<img src="asset-image/popular-place/yangon.png" class="card-img-top" alt="Popular place in Yangon">
+							<div class="card-body">
+								<h4 class="card-title text-center">Yangon</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Mandalay-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="mandalay">
+						<div class="card">
+							<img src="asset-image/popular-place/mandalay.jpg" class="card-img-top" alt="Popular place in Mandalay">
+							<div class="card-body">
+								<h4 class="card-title text-center">Mandalay</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Bagan-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="bagan">
+						<div class="card">
+							<img src="asset-image/popular-place/bagan.jpg" class="card-img-top" alt="Popular place in Bagan">
+							<div class="card-body">
+								<h4 class="card-title text-center">Bagan</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Kalaw-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="kalaw">
+						<div class="card">
+							<img src="asset-image/popular-place/kalaw.jpg" class="card-img-top" alt="Popular place in Kalaw">
+							<div class="card-body">
+								<h4 class="card-title text-center">Kalaw</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="subPupularPlace row mt-4 mx-2">
+
+					<!-- Pyin Oo Lwin-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="pyin-oo-lwin">
+						<div class="card">
+							<img src="asset-image/popular-place/pyin-oo-lwin.jpg" class="card-img-top" alt="Popular place in Yangon">
+							<div class="card-body">
+								<h4 class="card-title text-center">Pyin Oo Lwin</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Chaung Tha-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="chaung-tha">
+						<div class="card">
+							<img src="asset-image/popular-place/chaung-tha.jpg" class="card-img-top" alt="Popular place in Mandalay">
+							<div class="card-body">
+								<h4 class="card-title text-center">Chaung Tha</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Inle-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="inle">
+						<div class="card">
+							<img src="asset-image/popular-place/inle.jpg" class="card-img-top" alt="Popular place in Bagan">
+							<div class="card-body">
+								<h4 class="card-title text-center">Inle</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Hpa-An-->
+
+					<div class="col-12 col-md-6 col-lg-3 mb-4" id="hpa-an">
+						<div class="card">
+							<img src="asset-image/popular-place/hpa-an.jpg" class="card-img-top" alt="Popular place in Kalaw">
+							<div class="card-body">
+								<h4 class="card-title text-center">Hpa-An</h4>
+								<p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a href="#" class="checkIn btn btn-primary d-flex justify-content-center">CheckIn</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Service-->
+
+			<hr class="mx-5 mt-4">
+
+			<div class="service mt-3 mx-2" id="service">
+				<div class="servicetitle mb-4">
+					<h1 class="text-center">Explore Our Hotel Services</h1>
+				</div>
+				<div class="mx-2">
+					<div class="container">
+						<div class="subservice row row-gap-4">
+							<div class="col-12 col-md-6 col-lg-4" href="#">
+								<div class="topleft">
+									<img src="asset-image/service/wifi.jpg" alt="Free Wifi">
+									<div class="textimg">
+										<h2 class="wifi fw-bold">Free Wifi</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4" href="#">
+								<div class="topleft">
+									<img src="asset-image/service/gym & fitness.jpg" alt="Gym & Fitness">
+									<div class="textimg">
+										<h2 class="fw-bold">Gym & Fitness</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4" href="#">
+								<div class="topleft">
+									<img src="asset-image/service/swimming pool.jpg" alt="Swimming Pool">
+									<div class="textimg">
+										<h3 class="fw-bold">Swimming Pool</h3>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4" href="#">
+								<div class="topleft">
+									<img src="asset-image/service/restaurant.jpg" alt="Restaurant">
+									<div class="textimg">
+										<h2 class="fw-bold">Restaurant</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4" href="#">
+								<div class="topleft">
+									<img src="asset-image/service/beauty & spa.jpg" alt="Beauty & Spa">
+									<div class="textimg">
+										<h2 class="fw-bold">Beauty & Spa</h2>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4" href="#">
+								<div class="topleft">
+									<img src="asset-image/service/help & support.jpg" alt="Help & Support">
+									<div class="textimg">
+										<h3 class="fw-bold">Help & Support</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Featured Room-->
+
+			<hr class="mx-5 mt-4">
+
+			<div class="featuredroom mx-2 mt-3 mb-3" id="featured-room">
+				<div class="featuredroomtitle mb-3">
+					<h1 class="text-center">Featured Room</h1>
+				</div>
+				<div class="mx-2">
+					<div class="container">
+						<div class="subfeaturedroom row row-gap-4">
+							<div class="col-12 col-md-6 col-xl-3">
+								<div class="card">
+									<span class="roomimg-size">
+										<img src="asset-image/room/single-room.jpg" class="card-img-top" alt="Single Room">
+									</span>
+									<div class="card-body d-flex">
+										<div class="text-center">
+											<h3 class="card-title fw-bold">Single Room</h3>
+											<p class="card-text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus eaque quisquam itaque id praesentium culpa!
+											</p>
+											<span class="d-flex justify-content-around">
+												<span class="text-info mt-2">$450/NIGHT</span>
+												<a class="btn btn-dark">BOOK NOW</a>
+											</span>
+										</div>
+										<span class="rating mt-4 text-warning">
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-xl-3">
+								<div class="card">
+									<div class="card-body d-flex">
+										<div class="text-center">
+											<h3 class="card-title fw-bold">Double Room</h3>
+											<p class="card-text text-center">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus eaque quisquam itaque id praesentium culpa!										
+											</p>
+											<span class="d-flex justify-content-around">
+												<span class="text-info mt-2">$450/NIGHT</span>
+												<a class="btn btn-dark">BOOK NOW</a>
+											</span>
+										</div>
+										<span class="rating mt-4 text-warning">
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-regular fa-star d-flex d-block"></i>
+										</span>
+									</div>
+									<span class="roomimg-size">
+										<img src="asset-image/room/double-room.jpg" class="roomimg-size card-img-bottom" alt="Double Room">
+									</span>	
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-xl-3">
+								<div class="card">
+									<span class="roomimg-size">
+										<img src="asset-image/room/family-room.jpg" class="roomimg-size card-img-top" alt="Family Room">
+									</span>
+									<div class="card-body d-flex">
+										<div class="text-center">
+											<h3 class="card-title fw-bold">Family Room</h3>
+											<p class="card-text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus eaque quisquam itaque id praesentium culpa!										
+											</p>
+											<span class="d-flex justify-content-around">
+												<span class="text-info mt-2">$450/NIGHT</span>
+												<a class="btn btn-dark">BOOK NOW</a>
+											</span>
+										</div>
+										<span class="rating mt-4 text-warning">
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star-half-stroke d-flex d-block"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-xl-3">
+								<div class="card">
+									<div class="card-body d-flex">
+										<div class="text-center">
+											<h3 class="card-title fw-bold">Suite Room</h3>
+											<p class="card-text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus eaque quisquam itaque id praesentium culpa!										
+											</p>
+											<span class="d-flex justify-content-around">
+												<span class="text-info mt-2">$450/NIGHT</span>
+												<a class="btn btn-dark">BOOK NOW</a>
+											</span>
+										</div>
+										<span class="rating mt-4 text-warning">
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star d-flex d-block"></i>
+											<i class="fa-solid fa-star-half-stroke d-flex d-block"></i>
+											<i class="fa-regular fa-star d-flex d-block"></i>
+										</span>
+									</div>
+									<span class="roomimg-size">
+										<img src="asset-image/room/suite-room.jpg" class="roomimg-size card-img-bottom" alt="Suite Room">
+									</span>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Restaurant & Bar-->
+
+			<hr class="mx-5 mt-4">
+
+			<div class="restaurant mx-2 mt-3" id="restaurant-bar">
+				<h1 class="text-center">Restaurant & Bar</h1>
+				<div class="mt-3">
+					<div class="container">
+						<div class="restimg row row-gap-4">
+							<span class="col-12 col-md-6">
+								<img src="asset-image/restaurant/restaurant.jpg" alt="Restaurant & Bar">
+							</span>
+							<span class="col-12 col-md-6">
+								<img src="asset-image/restaurant/bar.jpg" alt="Restaurant & Bar">
+							</span>							
+						</div>
+						<div class="mt-4">
+							<div class="row row-cols-1 row-cols-md-2 g-2">
+							  	<div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-1.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="text fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+								<div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-2.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+								  <div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-3.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+								<div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-4.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+								  <div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-5.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+								<div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-6.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+								<div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-7.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+								<div class="subrestaurantbar col">
+									<div class="p-2 d-flex justify-content-around align-items-center">
+										<span class="restbarfoodimg">
+											<img src="asset-image/restaurant/food-8.jpg" alt="Restaurant & Bar Food and Drink">
+										</span>
+										<span class="fs-4">
+											<p>Lorem ipsum dolor sit amet.</p>
+										</span>
+										<span>
+											<p class="fs-4 text-warning">$20.00</p>
+										</span>
+									</div>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!--Review & Blog-->
+
+			<hr class="mx-5 mt-4">
+
+			<div class="review_blog mt-3 mx-2" id="review-blog">
+				<h1 class="text-center mb-3">Review & Blog</h1>
+				<div class="mx-2">
+					<div class="container">
+						<div id="reviewblog" class="carousel slide" data-bs-ride="carousel">
+							<div class="sub_review_blog carousel-inner">
+								<div class="carousel-item active" data-bs-interval="5000">
+									<div class="review-blog-width">
+										<div class="card">
+											<img src="asset-image/review & blog/review-blog1.jpg" class="card-img-top" alt="Review & Blog">
+											<div class="card-body mb-2">
+												<span class="text-warning"><b>ADMIN</b> <span class="text-info">DEC. 23, 20203</span>  <b>COMMENTS</b></span>
+												<h2 class="card-title text-center mt-2">Best Hotel in myanmar</h2>
+												<p class="card-text">
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+												</p>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<div class="carousel-item" data-bs-interval="5000">
+									<div class="review-blog-width">
+										<div class="card">
+											<img src="asset-image/review & blog/review-blog2.jpg" class="card-img-top" alt="Review & Blog">
+											<div class="card-body mb-2">
+												<span class="text-warning"><b>ADMIN</b> <span class="text-info">DEC. 23, 20203</span>  <b>COMMENTS</b></span>
+												<h2 class="card-title text-center mt-2">Best Hotel in myanmar</h2>
+												<p class="card-text">
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item" data-bs-interval="5000">
+									<div class="review-blog-width">
+										<div class="card">
+											<img src="asset-image/review & blog/review-blog3.jpg" class="card-img-top" alt="Review & Blog">
+											<div class="card-body mb-2">
+												<span class="text-warning"><b>ADMIN</b> <span class="text-info">DEC. 23, 20203</span>  <b>COMMENTS</b></span>
+												<h2 class="card-title text-center mt-2">Best Hotel in myanmar</h2>
+												<p class="card-text">
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item" data-bs-interval="5000">
+									<div class="review-blog-width">
+										<div class="card">
+											<img src="asset-image/review & blog/review-blog4.jpg" class="card-img-top" alt="Review & Blog">
+											<div class="card-body mb-2">
+												<span class="text-warning"><b>ADMIN</b> <span class="text-info">DEC. 23, 20203</span>  <b>COMMENTS</b></span>
+												<h2 class="card-title text-center mt-2">Best Hotel in myanmar</h2>
+												<p class="card-text">
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+													A small river named Duden flows by their place and supplies it with the necessary regelialia.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#reviewblog" data-bs-slide="prev">
+									<span class="prev carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#reviewblog" data-bs-slide="next">
+									<span class="next carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+				<!--End Section-->
+
+		<footer>
+			<div class="mt-5 pt-5 bg-dark">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-3">
+							<a href="index.html" class="text-decoration-none"><h2 class="text-light">Myanmar <br> Hotel Booking</h2></a>
+							<p class="text-light">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+							<div class="footericon">
+								<a href="#"><i class="fa-brands fa-facebook-f fa-lg p-3 bg-secondary bg-opacity-75 rounded-2"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter fa-lg p-3 bg-secondary bg-opacity-75 rounded-2"></i></a>
+								<a href="#"><i class="fa-brands fa-instagram fa-lg p-3 bg-secondary bg-opacity-75 rounded-2"></i></a>
+								<a href="#"><i class="fa-brands fa-youtube fa-lg p-3 bg-secondary bg-opacity-75 rounded-2"></i></a>
+							</div>
+						</div>
+						<div class="footer col-12 col-md-6 col-lg-3 mt-5 mt-md-0 text-light">
+							<h2>Quich Links</h2>
+							<a href="index.html" class="text-decoration-none d-block"> > Home</a>
+							<a href="#about-us" class="text-decoration-none d-block"> > About Us</a>
+							<a href="#popular-place" class="text-decoration-none d-block"> > Popular Place</a>
+							<a href="#service" class="text-decoration-none d-block"> > Service</a>
+							<a href="#featured-room" class="text-decoration-none d-block"> > Featured Room</a>
+							<a href="#restaurant-bar" class="text-decoration-none d-block"> > Restaurant & Bar</a>
+							<a href="#review-blog" class="text-decoration-none d-block"> > Review & Blog</a>
+						</div>
+						<div class="footer col-12 col-md-6 col-lg-3 mt-5 mt-lg-0 text-light">
+							<h2>Service</h2>
+							<a href="#" class="text-decoration-none d-block"> > Free Wifi</a>
+							<a href="#" class="text-decoration-none d-block"> > Gym & Fitness</a>
+							<a href="#" class="text-decoration-none d-block"> > Swimming Pool</a>
+							<a href="#" class="text-decoration-none d-block"> > Restaurant</a>
+							<a href="#" class="text-decoration-none d-block"> > Beauty & Spa</a>
+							<a href="#" class="text-decoration-none d-block"> > Help & Support</a>
+						</div>
+						<div class="footer col-12 col-md-6 col-lg-3 mt-5 mt-lg-0 text-light">
+							<h2 class="mb-3">Have a Questions?</h2>
+							<span class="d-flex">
+								<i class="fa-solid fa-map text-warning"></i>
+								<p class="ms-3">lanmadaw 5th, Yangon, Myanmar</p>
+							</span>
+							<a class="d-flex text-decoration-none" href="#">
+								<i class="fa-solid fa-phone text-warning"></i>
+								<p class="ms-3">09 123456789</p>
+							</a>
+							<a class="d-flex text-decoration-none" href="#">
+								<i class="fa-solid fa-envelope text-warning"></i>
+								<p class="ms-3">hotel12info@gmail.com</p>
+							</a>
+						</div>
+					</div>
+					<hr class="mx-3 text-secondary">
+					<p class="py-4 text-light text-center">Copyright @ 2023 All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="js/bootstrap.bundle.min.js"></script>	
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/script.js"></script>
+</html>

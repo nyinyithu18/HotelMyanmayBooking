@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "aria", sans-serif;
+}
+
+body {
+    background-color:rgb(162, 170, 217);
+}
+/* Start header */
+
+header {
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carouselGp {
+    position: relative;
+}
+
+.subheader {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.hotelBrand img {
+    width: 60px;
+    height:50px;
+}
+
+.hotelBrand a {
+    font-family: Courier;
+}
+
+.nav-item .nav-link, .payLang ul .dropdown a {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500; 
+    padding: 5px 7px; 
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.nav-item .nav-link:hover , .payLang ul .dropdown .dropdown-toggle:hover{ 
+    color: #fff;
+    background-color: rgb(68, 95, 226);
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    color: #403d3d;
+    background-color: rgb(181, 189, 233);
+}
+
+.dollor,.usFlag,.myanFlag {
+    width: 30px;
+    height: 20px;
+    margin-top: 7px;
+}
+
+.kyat {
+    width: 40px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.usFlag {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.myanFlag {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+}
+
+.payLang ul .dropdown{
+    list-style-type: none;
+}
+
+.navbar-toggler .close {
+    display: none;
+}
+
+.checkInOut {
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 220px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(70,130,180,0.7);
+}
+
+.checkInOut form div input {
+    width: 200px;
+}
+
+.roomInput {
+    margin-left: 37px;
+}
+
+.bookNow {
+    margin-left: 78px;
+    width: 196px;
+    background-color: rgb(196, 192, 192);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.bookNow:hover {
+    background-color: rgb(105, 99, 99);
+}
+
+.welcom {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    top: 22%;  
+    justify-content: center;
+    text-shadow: 4px 4px 8px white;
+}
+
+/* Arrow Down */
+
+@keyframes arrowDown {
+    0%, 30%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.arrow-down {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 3%;
+    animation: arrowDown 2s ease infinite;
+}
+
+.arrow-down img {
+    width: 30px;
+    height: 40px;
+}
+
+/* Animate */
+
+@keyframes anishade {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tourImg {
+    position: relative;
+}
+
+.shade1 , .shade2, .shade3 {
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid rgb(236, 109, 192);
+    border-left:2px solid rgb(215, 215, 44);
+    border-right: 2px solid rgb(80, 212, 78);
+    animation: anishade 3s linear infinite;
+}
+
+.shade1 {
+    top: 13%;
+    right: 15%;
+}
+
+.shade2 {
+    top: 13%;
+    left: 15%;
+    display: none;
+}
+
+.shade3 {
+    bottom: 13%;
+    right: 15%;
+    display: none;
+}
+
+.checkInOut:hover {
+    box-shadow: 1px 1px 20px 10px rgb(100, 173, 213);
+    transition-duration: 2s;
+}
+/* End header */
+
+/* Start section */
+
+/* About Us */
+
+.aboutUs h1 , .service .servicetitle h1 , .featuredroomtitle h1 , .pupularPlace h1 , .restaurant h1, .review_blog h1{
+    font-family: cursive;
+}
+
+.tourImg img {
+    width: 100%;
+    height: 45vh;
+    margin: auto;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;  
+}
+
+
+/* Service */
+
+.subservice {
+    margin: auto;
+    display: flex;
+}
+
+.subservice div {
+    justify-content: around;
+}
+
+.subservice .topleft {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1200px) { 
+    .subservice .topleft {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1400px) { 
+    .subservice .topleft {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+.subservice .topleft .textimg {
+    position: absolute;
+    z-index: 2;
+    bottom: 2%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -2%);
+    color: #fff;   
+}
+
+.subservice .topleft .textimg {
+    text-shadow: 2px 2px 4px #fff;
+    border-radius: 5px;
+}
+
+.subservice .topleft .textimg .wifi {
+    color: rgb(89, 89, 192);
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgb(89, 89, 192);  
+}
+
+@media screen and (max-width: 800px) { 
+    .subservice .topleft {
+        width: 100%;
+        height: auto;
+    }
+  
+    .subservice .topleft .textimg .wifi {
+        font-size: 30px;       
+    }
+}
+
+.subservice .topleft img {
+    width: 100%;
+    height: 100%;  
+}
+
+
+/*Featured Room*/
+
+.roomimg-size img{
+    width: 100%;
+    height: 29vh;
+}
+
+@media screen and (max-width: 47.95em) {
+    .roomimg-size img{
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .roomimg-size img{
+        height: 29vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .roomimg-size img{
+        height: 36vh;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .roomimg-size img{
+        height: 33vh;
+    }
+}
+
+
+/* Restaurant & Bar */
+
+.subrestaurantbar div {
+    background-color: #fff;
+}
+
+.subrestaurantbar div:hover {
+    background-color: #000;
+    color: white;
+}
+
+.restimg img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.restbarfood {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.restbarfoodimg img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+
+/* Review & Blog */
+
+.sub_review_blog div .review-blog-width {
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .sub_review_blog div .review-blog-width {
+        width: 500px;
+        height: auto;
+        margin: auto;
+    }   
+}
+
+.prev , .next {
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+.footer a {
+    color: white;
+}
+
+.footericon a {
+    color: black;
+}
+
+.footer a:hover , .footericon a:hover {
+    color: rgb(107, 122, 195);
+}
+
+/* Add Class For Js */
+
+.popularplacehover {
+    box-shadow: 1px 1px 5px 10px rgb(179, 214, 233);
+    transition-duration: 2s;  
+    transform: scale(0.9);
+}
+
+.subservicehover {
+    transform: scale(1.1);
+	z-index: 1;
+	transition-duration: 1s;
+    box-shadow: 1px 1px 10px 5px rgb(211, 216, 218);
+    opacity: 0.9;
+}
+
+.subfeaturedroom div:hover {
+    background-color: #101010;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.9);
+	z-index: 1;
+	transition-duration: 3s;
+    box-shadow: 1px 1px 10px 5px rgb(54, 51, 51);
+}
+
+.restimghover {
+    transform: scale(1.07);
+	z-index: 1;
+	transition-duration: 1s;
+    box-shadow: 1px 1px 10px 7px rgb(151, 173, 182);
+}
+
+
+

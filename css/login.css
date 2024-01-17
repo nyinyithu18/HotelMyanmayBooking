@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "aria", sans-serif;
+}
+
+.loginform {
+    position: relative;
+}
+
+.loginform img {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+.login{
+    position: absolute;  
+    z-index: 2; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login form {
+    padding: 20px;
+    color: black;
+}
+
+.name, .password, .submit {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.login input:last-child {
+    margin-left: 160px;
+}
+
+
+/* Animation */
+
+@keyframes anishade {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.shade1, .shade2, .shade3, .shade4 {
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid rgb(10, 10, 206);
+    border-bottom: 2px solid rgb(204, 40, 147);
+    border-left:2px solid rgb(205, 205, 14);
+    border-right: 2px solid rgb(22, 218, 19);
+    animation: anishade 3s linear infinite;
+}
+
+.shade1 {
+    top: 8%;
+    left: 15%;
+}
+
+.shade2 {
+    top: 8%;
+    right: 15%;
+}
+
+.shade3 {
+    bottom: 8%;
+    left: 15%;
+}
+
+.shade4 {
+    bottom: 8%;
+    right: 15%;
+}
+
+
+
+
